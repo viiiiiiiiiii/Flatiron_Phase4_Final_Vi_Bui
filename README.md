@@ -1,63 +1,38 @@
 # Flatiron Phase 4 - Final Project by Vi Bui
 # Movie Recommendation System
 
-<img src='images/Popular_Movies'>
+<img src='Images/Popular_Movies.png'>
 
 # Overview
 
-**Client:** RADS - Recruiting Awesome Data Scientists Incorporation. Data Scientist recruiting firm looking for potential future Data Scientists. 
+Vi(sion) Studios, a new streaming service, is looking to launch a concept called "Digital Cinema Night" where customers can build a "Cinema Night" around specific movies. They've hired us to build a Recommendation System in order to launch this concept.  
 
 ## Data, Methodology, and Analysis <br/> 
 
-Data source: HR Analytics https://www.kaggle.com/arashnic/hr-analytics-job-change-of-data-scientists <br/>
+Data source: MovieLens data which captures Movies, Ratings, Genres, and Year. For this analysis, we used all metrics available with the exception of Tags which may be used for later analysis.  
 
-Context: the data is from a company that is active in Big Data and Data Science and ran a training program with the intention to hire data scientists among people who successfully passed courses they conducted
+From MovieLens: “Users were selected at random for inclusion. All selected users had rated at least 20 movies. No demographic information is included. Each user is represented by an id, and no other information is provided.”
 
-This dataset includes current credentials, demographics, experience, education, training hours and several features, which will help us build models for RADs about candidates that are likely to be looking for a job change 
+Data: 9724 unique entries and 610 unique users 
 
 **Models Built:** 
 
-1. Logistic Regression Classifier
-2. Decision Tree Classifier
-3. Random Forest Classifier
-4. Gradient Booster Classifier
+1. Singular Vector Decomposition Model (SVD)
+2. k-Nearest Neighbor Baseline Model (KNNB)
+3. Non-Negative Matrix Factorization Model (NMF)
 
-### Feature Description Definitions
-
-**Features included in dataset:**
-
-enrollee_id: Unique ID for candidate
-
-city: City code
-
-city_development_index: Development index of the city (scaled)
-
-gender: Gender of candidate
-
-relevant_experience: Relevant experience of candidate
-
-enrolled_university: Type of University course enrolled if any
-
-education_level: Education level of candidate
-
-major_discipline: Education major discipline of candidate
-
-experience: Candidate total experience in years
-
-company_size: Number of employees in current employer's company
-
-company_type: Type of current employer
-
-lastnewjob: Difference in years between previous job and current job
-
-training_hours: Data science course training hours completed
-
-target: 0 – Not looking for job change, 1 – Looking for a job change
+**Features included and created:**
+1. Movie ID (included)
+2. User ID (included) 
+3. Ratings (included)
+4. Year (cleaned & created)
+5. Genre (cleaned & created) 
+6. Ratings Count (created) 
 
 <br>
 
 ## BUSINESS VALUE
-<img src='images/Business_Value_New.png'>
+<img src='Images/Business_Value.png'>
 
 
 ## OBSERVATIONS ABOUT THE DATA
