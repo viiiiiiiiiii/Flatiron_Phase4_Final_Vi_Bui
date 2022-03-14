@@ -63,8 +63,9 @@ While all models showed strong results and predictions, we chose the Singular Va
 
 <br>
 
-<img src='Images/Models.png'>
+<img src='Images/Models_Clean.png'>
 
+<br>
 
  # **RESULTS & RECOMMENDATIONS** 
 
@@ -80,26 +81,29 @@ While all models showed strong results and predictions, we chose the Singular Va
 - Movies leaned toward 1990s to early 2000s 
 - Opportunity to build early loyalty with an influential demographic
 
-<br> 
-
-## BRINGING THE VI(SION) TO LIFE - THE INTERFACE
-## DIGITAL CINEMA NIGHT
-
-<img src='Images/Digital_Cinema_Night.png'>
+<br>
 
 ## **FUTURE WORK**
-- Build functionality around genre and year choices (use below data on genres and ratings) 
+- Build functionality around genre and year choices 
 - Extend audience beyond initial millennial focus 
 - Expand dataset with more movie choices & continually refine “Digital Cinema Night” system to make stronger recommendations to users
 - Build exquisite user interface 
 
-<img src='Images/Future_Work_Genres.png'>
+<br> 
+
+## BRINGING THE VI(SION) TO LIFE
+## DIGITAL CINEMA NIGHT!!
+<br>
+
+<img src='Images/Digital_Cinema_Night.png'>
+
+<br>
 
 # Repository Structure
 
 - Images 
 - README.me
 - Vi_Bui_Phase4_Project_FINAL_Surprise.ipynb
-- Vi_Bui_Phase4_Project_FINAL_FINAL - Jupyter Notebook.pdf
-- Vi_Bui_Phase4_Project_FINAL_FINAL_PresentationPDF.pdf
+- Vi_Bui_Phase4_Project_FINAL_Jupyter Notebook.pdf
+- Vi_Bui_Phase4_Project_FINAL_Presentation.pdf
 - Flatiron_Phase4_Final_Vi_Bui/edit/main/README.md.pdf
