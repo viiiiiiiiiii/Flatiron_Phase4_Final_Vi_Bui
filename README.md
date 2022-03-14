@@ -9,11 +9,11 @@ Vi(sion) Studios, a new streaming service, is looking to launch a concept called
 
 ## Data, Methodology, and Analysis <br/> 
 
-Data source: MovieLens data which captures Movies, Ratings, Genres, and Year. For this analysis, we used all metrics available with the exception of Tags which may be used for later analysis.  
+Data source: Popular MovieLens dataset which captures Movies, Ratings, Genres, and Year. 
 
-From MovieLens: “Users were selected at random for inclusion. All selected users had rated at least 20 movies. No demographic information is included. Each user is represented by an id, and no other information is provided.”
+More about the data from MovieLens: “Users were selected at random for inclusion. All selected users had rated at least 20 movies. No demographic information is included. Each user is represented by an id, and no other information is provided.”
 
-Data: 9724 unique entries and 610 unique users 
+There are 9724 unique entries and 610 unique users in the data. 
 
 **Models Built:** 
 
@@ -34,62 +34,72 @@ Data: 9724 unique entries and 610 unique users
 ## BUSINESS VALUE
 <img src='Images/Business_Value.png'>
 
+<br> 
 
 ## OBSERVATIONS ABOUT THE DATA
-### The data is skewed: 
-- 69% Male
-- 76% Major/Discipline - STEM
+**Most movies are from the 1990s to the early 2000s (key Millennial time period)**
 
-<img src='images/DS_Gender.png'>
-
-<img src='images/DS_Major.png'>
-
+<img src='Images/Movie_Years.png'>
 
 <br>
 
-### Most participants trained for 50 hours or less and about 25% changed jobs
+**The most popular genres: Drama, Comedy, and Action**
 
-<img src='images/DS_Training_Hours.png'>
+<img src='Images/Genre_Distribution.png'>
 
-<img src='images/DS_Career_Change.png'>
+<br>
+
+**Users tend to rate in whole numbers and 4 (out of 5) is the most popular rating**
+
+<img src='Images/Ratings_Distribution.png'>
 
 <br>
 
 # Models & Metrics 
-## We ran various models and chose the model with the highest recall rate 
+## We ran three models and used RMSE (root mean square error), which tells us how close our model's predicted ratings are to actual ratings. 
 
-- Because there is a smaller portion of participants who changed jobs (25%), the metric we used to measure our models' performances was Recall 
+<br>
+While all models showed strong results and predictions, we chose the Singular Value Decomposition (SVD) model, which had an RMSE of 0.86, meaning our predictions, on average, were 0.86 points away from actual ratings. 
 
-- Recall measures the % a model predicts True Positives (employees "Looking for a Job Change") that actually are looking for a job change
+<br>
 
-- Our model is expected to predict True Positives (i.e. predict employees "Looking for a Job Change" that are actually looking for a job change) 77% of the time
-
-
-<img src='images/Model_Results.png'>
-
-## THE MOST IMPORTANT DETERMINANT OF JOB CHANGE IS CITY DEVELOPMENT INDEX
-### Other important features (some which also ranked high in other models are): 
-- Experience 
-- Small company size (<10 to 500)
-- Education level: Graduate Degree
+<img src='Images/Models.png'>
 
 
- ## **CONCLUSIONS** 
-- While this data gives us insight into the importance of location, company size, education, and experience in identifying those looking to change jobs, there are endless ways to use this data to help RADs build a future for Data Scientists
+ # **RESULTS & RECOMMENDATIONS** 
+
+## Summary of recommendations
+
+**Use SVD Model to launch**
+- While all models showed improvement after tuning and KNN Baseline and NMF Models have low RMSEs (predictions are close to actual ratings), in order to reduce the risk of over-fitting, the SVD Model - with a strong RMSE of 0.86 - is recommended 
+
+**Test for 6 months and re-evaluate**
+- Revisit KNN Baseline and/or NMF Models if necessary 
+
+**Launch concept with Millennial (or Millennial-enthusiast) audience**
+- Movies leaned toward 1990s to early 2000s 
+- Opportunity to build early loyalty with an influential demographic
+
+<br> 
+
+## BRINGING THE VI(SION) TO LIFE - THE INTERFACE
+## DIGITAL CINEMA NIGHT
+
+<img src='Images/Digital_Cinema_Night.png'>
 
 ## **FUTURE WORK**
-- Identify recruiting opportunities and strategies for RADs’ Data Science program (recruit more females; recruit 'unlikely' candidates that do not have a background in STEM; recruit in various cities)
-- Offer another round of Data Science training curriculum to engage more employees 
-- Gather more data following Round 2 and re-run models
-- Continue refining overall process and models
-- Make sure all who want to explore Data Science have the opportunity! 
+- Build functionality around genre and year choices (use below data on genres and ratings) 
+- Extend audience beyond initial millennial focus 
+- Expand dataset with more movie choices & continually refine “Digital Cinema Night” system to make stronger recommendations to users
+- Build exquisite user interface 
 
+<img src='Images/Future_Work_Genres.png'>
 
 # Repository Structure
 
-- images 
+- Images 
 - README.me
-- Vi_Bui_Phase3_Project_FINAL_FINAL.ipynb
-- Vi_Bui_Phase3_Project_FINAL_FINAL - Jupyter Notebook.pdf
-- Vi_Bui_Phase3_Project_FINAL_FINAL_PresentationPDF.pdf
-- Flatiron_Phase3_Final_Vi_Bui/edit/main/README.md.pdf
+- Vi_Bui_Phase4_Project_FINAL_Surprise.ipynb
+- Vi_Bui_Phase4_Project_FINAL_FINAL - Jupyter Notebook.pdf
+- Vi_Bui_Phase4_Project_FINAL_FINAL_PresentationPDF.pdf
+- Flatiron_Phase4_Final_Vi_Bui/edit/main/README.md.pdf
